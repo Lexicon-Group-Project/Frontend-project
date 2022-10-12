@@ -129,6 +129,9 @@
 /* End Global Button Styles */
 
 /* Store info section styles*/
+#storeInfo {
+	margin-top: 20px;
+}
 .storeInfo__wrapper {
 	display: flex;
 	justify-content: center;

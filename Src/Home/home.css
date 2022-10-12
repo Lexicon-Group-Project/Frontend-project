@@ -28,10 +28,22 @@
 	text-align: center;
 	font-size: 1.4rem;
 	margin-bottom: 1.5rem;
-	color: var(--black-2);
+	color: var(--black-2);	
 }
 .button__wrapper {
 	text-align: center;
+}
+.circus-btn {
+	color: var(--green-1);
+	font-family: Poppins;
+	font-weight: 500;
+	border-radius: 8px;
+	font-size: 1.6rem;
+	padding: 1.2rem 2rem;
+	margin-top: 10px;	
+	margin-left: 280px;
+	color: var(--white-1);
+	background: var(--green-1);
 }
 
 @media only screen and (min-width: 768px) {
