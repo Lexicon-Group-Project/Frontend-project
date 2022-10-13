@@ -260,7 +260,7 @@
 /* Footer Styles */
 footer {
 	background: var(--lightGreen-1);
-	padding-top: 5rem;
+	padding-top: 3rem;
 	padding-bottom: 2rem;
 }
 .footer__wrapper {
@@ -286,6 +286,7 @@ footer {
 	display: inline-block;
 	margin-right: 0.5rem;
 }
+
 .footer__socials a {
 	padding: 0.5rem 0.8rem;
 	background-color: var(--white-1);
@@ -321,10 +322,10 @@ footer {
 	.footer__col1 {
 		flex: 4;
 	}
-	.footer__col2,
+/*	.footer__col2,*/
 	.footer__col3,
 	.footer__col4 {
-		flex: 2;
+		flex: 4;
 	}
 	.footer__desc {
 		max-width: 300px;
@@ -346,6 +347,7 @@ footer {
 }
 #copyright {
 	padding: 1rem 0;
+	text-align: center;
 }
 .copyright__text {
 	font-size: 1.4rem;
