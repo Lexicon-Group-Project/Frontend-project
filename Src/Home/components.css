@@ -1,7 +1,11 @@
 /* Nav Styles */
 .nav {
 	padding: 2rem 0;
+	background: var(--lightGreen-1); 
+	padding-top: 0rem;
+	padding-bottom: 0rem;
 }
+
 .nav__icon,
 .nav__close,
 .nav__bgOverlay {
@@ -9,9 +13,12 @@
 }
 
 .nav__logo {
-	width: 20px;
-	height: 20px;
-	margin-bottom: 0rem;
+	padding: 0 0;
+	width: 200px;
+	height: 200px;
+	padding-top: 0rem;
+	padding-bottom: 2rem;
+	padding-right: 2rem;
 }
 
 .nav__wrapper {
@@ -21,17 +28,19 @@
 .nav__list li {
 	display: inline-block;
 	margin: 0 1rem;
+	padding-top: 3rem;
+	padding-bottom: 0rem;
 }
 .nav__list .nav__link {
-	font-size: 1.8rem;
-	font-family: 'Poppins';
+	font-size: 2.3rem;
+	font-family: 'Poppins' ;
 	color: var(--black-2);
 	padding: 0.5rem;
 }
+
 .nav__list li:hover .nav__link {
 	color: var(--green-1);
 }
-
 
 @media only screen and (max-width: 768px) {
 	.nav {
@@ -120,6 +129,9 @@
 /* End Global Button Styles */
 
 /* Store info section styles*/
+#storeInfo {
+	margin-top: 20px;
+}
 .storeInfo__wrapper {
 	display: flex;
 	justify-content: center;
