@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Home Page | Circus Restaurant</title>
+   <title>Order | Circus Restaurant</title>
    <link rel="stylesheet" href="./globalStyles.css">
    <link rel="stylesheet" href="./reset.css">
    <link rel="stylesheet" href="./components.css">
@@ -12,9 +12,19 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Add css just for the home page-->
   <link rel="stylesheet" href="./home.css">
-
+  <!-- added by hari for showing and adding ingredients-->
+  <style>
+    li {
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px;
+    }
+    ul { padding:0; }
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="order.js"></script>
+ <!-- added by hari for showing and adding ingredients ends-->
 </head>
-
 <body>
     <!-- Nav Section -->
     <div class="nav">
@@ -63,7 +73,6 @@
   <!-- Store Info Section -->
   
   <!-- End Store Info Section -->
-
   <!-- Top Dishes -->
   <section id="dishGrid" data-aos="fade-up">
     <div class="container">
@@ -86,10 +95,22 @@
             </div>
             <br>
             <div>
-                <a href="./booking.html" class="btn primary-btn">Order</a>
-                <br><br>
-                <div><a>See Ingredients</a></div><br><br>
-                <div><a>Add Ingredients </a></div>
+                <div>Ingredients : <ul id="items">
+                    <li>Tomato</li>
+                    <li>Salmon</li>
+                    <li>coriander</li>
+                    <li>Onion</li>
+                    <li>Garlic</li>
+                </ul></div><br>
+                <button id="showItemsButton">Click/unclick Ingredients from the list above</button><br><br> 
+                <div id="selectedItems"></div>
+                <br><br>              
+                <!-- <a class="btn primary-btn" id="order">Order</a> -->
+                <button class="dishGrid__item__title"  id="order">Order</button><br>
+                          
+                <span class="dishGrid__item__price"><div id="orderedItems"></div></span>
+                <script>$(attachIngredients())</script>
+               
             </div>
           </div>
         </div>
@@ -156,7 +177,6 @@
               <br>
             <div><a href="./booking.html" class="btn primary-btn">Order</a></div>
             </div>
-
           </div> 
           <div class="dishGrid__item">
             <div class="dishGrid__item__img">
@@ -195,7 +215,6 @@
     </div>
   </section>
   <!-- End Events Media -->
-
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -263,13 +282,11 @@
             <li>
               <a href="./contact.html">Contact Us</a>
             </li>
-
           </ol> -->
         
           <!-- added by hari for google map-->
        
           <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=kungsgatan%2045%20stockholm+(Circus%20Restaurant)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-
           <!-- added by hari for google map ends-->
         </div>
         <div class="footer__col3">
@@ -316,10 +333,10 @@
   </div>
   <!-- End Footer -->  
 
-
   <!-- aos script -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- custom script -->
   <script src="./home.js"></script>
+  <script src="./order.js"></script>
  </body>     
 </html>
