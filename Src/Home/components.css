@@ -42,6 +42,11 @@
 	color: var(--green-1);
 }
 
+.active, .nav__link:hover {
+	background-color: #666;
+	
+  }
+
 @media only screen and (max-width: 768px) {
 	.nav {
 		position: relative;
