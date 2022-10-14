@@ -1,124 +1,135 @@
 /* hero section styles */
 .hero__wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column-reverse;
-	gap: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 5rem;
 }
 .hero__left__wrapper {
-	max-width: 400px;
+    max-width: 400px;
 }
 .hero__imgWrapper {
-	max-width: 500px;
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 1.5rem;
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
 }
 .hero__heading {
-	font-family: 'Poppins';
-	font-weight: 600;
-	line-height: 1.4em;
-	text-align: center;
-	font-size: 1.6rem;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-	color: var(--black-1);
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--black-1);
 }
 .hero__info {
-	text-align: center;
-	font-size: 1.4rem;
-	margin-bottom: 1.5rem;
-	color: var(--black-2);	
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--black-2);  
 }
 .hero__info2 {
-	text-align: center;
-	font-size: 1.4rem;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-	color: var(--black-2);	
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--black-2);  
 }
-
 .button__wrapper {
-	text-align: center;
+    text-align: center;
 }
 .circus-btn {
-	color: var(--green-1);
-	font-family: Poppins;
-	font-weight: 500;
-	border-radius: 8px;
-	font-size: 1.6rem;
-	padding: 1.2rem 2rem;
-	margin-top: 10px;	
-	margin-left: 150px;
-	color: var(--white-1);
-	background: var(--green-1);
+    color: var(--green-1);
+    font-family: Poppins;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding: 1.2rem 2rem;
+    margin-top: 10px;   
+    margin-bottom: 10px;
+    margin-left: 150px;
+    color: var(--white-1);
+    background: var(--green-1);
 }
-
+.hero-btn {
+    color: var(--green-1);
+    font-family: Poppins;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding: 1.2rem 2rem;
+    margin-top: 10px;   
+    margin-bottom: 10px;
+    color: var(--white-1);
+    background: var(--green-1);
+}
 @media only screen and (min-width: 768px) {
-	.hero__wrapper {
-		flex-direction: row;
-		gap: 0;
-	}
-	.hero__left {
-		flex: 3.5;
-	}
-	.hero__right {
-		flex: 4;
-	}
-	.hero__heading {
-		font-size: 3.6rem;
-		margin-bottom: 2rem;
-		text-align: left;
-	}
-
-	.hero__info {
-		margin-bottom: 2rem;
-		text-align: left;
-		font-size: 1.8rem;
-	}
-	.hero__info2 {
-		margin-bottom: 2rem;
-		text-align: left;
-		font-size: 1.8rem;
-	}
-	.button__wrapper {
-		text-align: left;
-	}
-	.hero__imgWrapper {
-		max-width: none;
-		width: 90%;
-	}
+    .hero__wrapper {
+        flex-direction: row;
+        gap: 0;
+    }
+    .hero__left {
+        flex: 3.5;
+    }
+    .hero__right {
+        flex: 4;
+    }
+    .hero__heading {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+    .hero__info {
+        margin-bottom: 2rem;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    .hero__info2 {
+        margin-bottom: 2rem;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    .button__wrapper {
+        text-align: left;
+    }
+    .hero__imgWrapper {
+        max-width: none;
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 900px) {
-	.hero__left,
-	.hero__right {
-		flex: 1;
-	}
+    .hero__left,
+    .hero__right {
+        flex: 1;
+    }
 }
-
 /* EventsMedia Styles */
 .eventsMedia__wrapper {
-	display: flex;
-	gap: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;   
+    margin-bottom: 10px;    
 }
 .eventsMedia__1 {
-	position: relative;
+    position: relative;
 }
 .eventsMedia__1__playButton {
-	display: inline-block;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 50px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50px;
 }
 @media only screen and (min-width: 768px) {
-	.eventsMedia__wrapper {
-		gap: 2rem;
-	}
-	.eventsMedia__1__playButton {
-		max-width: 100px;
-	}
+    .eventsMedia__wrapper {
+        gap: 2rem;
+    }
+    .eventsMedia__1__playButton {
+        max-width: 100px;
+    }
 }
 /* End EventsMedia Styles */
