@@ -7,7 +7,7 @@ function attachIngredients() {
              $(this).css('background', "");
          } else {
              $(this).attr("data-selected", true);
-             $(this).css('background',"#DDD");
+             $(this).css('background',"#FCD299");
          }
      }
      if($(this).attr("data-selected", true))
