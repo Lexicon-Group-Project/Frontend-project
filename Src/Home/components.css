@@ -37,7 +37,7 @@
     color: var(--green-1);
 }
 .nav__link:active, .nav__link:hover {
-	background-color:blue;
+	background-color:orange;
 	
   }
 @media only screen and (max-width: 768px) {
